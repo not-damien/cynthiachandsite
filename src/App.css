@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+body{
+  background: linear-gradient(180deg, #02004B 0%, rgba(255, 255, 255, 0) 100%);
+  mix-blend-mode: normal;
+  background-repeat: no-repeat;
+}
 #sub-tittle {
   display: flex;
   flex-direction: row;
@@ -64,4 +69,7 @@ a{
   border-style: solid;
   border-color: black;
   border-width: 2px;
+  width: 321px;
+  height: 302px;
+  color: white;
 }

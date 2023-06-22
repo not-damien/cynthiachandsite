@@ -1,5 +1,7 @@
 import rocket from './rocket.svg';
 import './App.css';
+import React, { useState } from 'react';
+import simpleTee from './images/simpleTee.png'
 
 function App() {
   return (
@@ -19,23 +21,63 @@ function App() {
           </div>
       </header>
      
-
-     <Card></Card>
+      <body>
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+      </body>
+     
     </div>
   );
 }
 
 
 
-function Card() {
+function Card({ imageSrc, title, description }) {
+  const [isHovered, setIsHovered] = useState(false);
+  
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+  
+  
+  
   return(
-    <div className='card-container'>
-      <h3>
-        simple tee
-      </h3>
-      <p>
-        this is a short paragraph about tee
-      </p>
+    <div className='card-container'
+    onMouseEnter={handleMouseEnter}
+    onMouseLeave={handleMouseLeave}
+    style={{ backgroundColor: isHovered ? 'gray' : 'transparent'}}
+    >
+      <div
+      style={{ display: 'inline-block', margin: '10px' }}
+    >
+      {!isHovered && (
+        <img src={imageSrc} alt={title} style={{ width: '200px', height: '200px' }} />
+      )}
+      <h3>{title}</h3>
+      {isHovered && <p>{description}</p>}
+    </div>
     </div>
   )
 }
