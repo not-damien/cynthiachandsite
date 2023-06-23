@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: white;
 }
 body{
   background: linear-gradient(180deg, #02004B 0%, rgba(255, 255, 255, 0) 100%);
@@ -48,7 +49,7 @@ a{
   align-items: center;
   justify-content: center;
 }
-#site-name , h2{
+#site-name , #tag-line{
   margin: 0;
 }
 
@@ -72,4 +73,18 @@ a{
   width: 321px;
   height: 302px;
   color: white;
+  margin: 15px;
+}
+
+
+.card-holder {
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+#working-on-line {
+  margin-top:0;
+  font-size: 40px;
 }

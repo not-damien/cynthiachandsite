@@ -10,7 +10,7 @@ function App() {
         <div id="tittle-container">
         <h1 id="site-name">Cynthia Chand</h1>
         <div id="sub-tittle">
-          <h2>Designing the Future.</h2>
+          <h2 id="tag-line">Designing the Future.</h2>
           <img src={rocket} className="App-logo" alt="logo" />
         </div>
         </div>
@@ -22,31 +22,88 @@ function App() {
       </header>
      
       <body>
-        <Card
-        imageSrc={simpleTee}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={simpleTee}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={simpleTee}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={simpleTee}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
+        <CardHolder/>
       </body>
      
     </div>
   );
 }
+
+function CardHolder(){
+  return (
+    <div>
+    <h2 id="working-on-line">Here’s what I’ve been working on</h2>
+    <div className='card-holder'>
+      <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+        <Card
+        imageSrc={simpleTee}
+        title="Image Title"
+        description="This is the description that will appear on hover."
+        />
+    </div>
+    </div>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -67,7 +124,7 @@ function Card({ imageSrc, title, description }) {
     <div className='card-container'
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}
-    style={{ backgroundColor: isHovered ? 'gray' : 'transparent'}}
+    style={{ backgroundColor: isHovered ? '#282747' : 'transparent'}}
     >
       <div
       style={{ display: 'inline-block', margin: '10px' }}
