@@ -2,6 +2,9 @@ import rocket from './rocket.svg';
 import './App.css';
 import React, { useState } from 'react';
 import simpleTee from './images/simpleTee.png'
+import foodTopia from './images/foodTopia.png'
+import inBrowse from './images/inBrowse.png'
+import foldHere from './images/foldHere.png'
 
 function App() {
   return (
@@ -36,56 +39,56 @@ function CardHolder(){
     <div className='card-holder'>
       <Card
         imageSrc={simpleTee}
+        title="SimpleTee"
+        description="A custom t-shirt design app and my first project!"
+        />
+        <Card
+        imageSrc={foodTopia}
+        title="Foodtopia"
+        description="A recipe app with simple snacks for kids to make! Yum"
+        />
+        <Card
+        imageSrc={inBrowse}
+        title="InBrowse"
+        description="A Google Chrome extension used to screen record."
+        />
+        <Card
+        imageSrc={foldHere}
+        title="FoldHere"
+        description="A desktop widget for easily sharing files between computers."
+        />
+        <Card
+        imageSrc={rocket}
         title="Image Title"
         description="This is the description that will appear on hover."
         />
         <Card
-        imageSrc={simpleTee}
+        imageSrc={rocket}
         title="Image Title"
         description="This is the description that will appear on hover."
         />
         <Card
-        imageSrc={simpleTee}
+        imageSrc={rocket}
         title="Image Title"
         description="This is the description that will appear on hover."
         />
         <Card
-        imageSrc={simpleTee}
+        imageSrc={rocket}
         title="Image Title"
         description="This is the description that will appear on hover."
         />
         <Card
-        imageSrc={simpleTee}
+        imageSrc={rocket}
         title="Image Title"
         description="This is the description that will appear on hover."
         />
         <Card
-        imageSrc={simpleTee}
+        imageSrc={rocket}
         title="Image Title"
         description="This is the description that will appear on hover."
         />
         <Card
-        imageSrc={simpleTee}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={simpleTee}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={simpleTee}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={simpleTee}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={simpleTee}
+        imageSrc={rocket}
         title="Image Title"
         description="This is the description that will appear on hover."
         />
