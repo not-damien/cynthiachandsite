@@ -1,10 +1,9 @@
 import rocket from './rocket.svg';
 import './App.css';
-import React, { useState } from 'react';
-import simpleTee from './images/simpleTee.png'
-import foodTopia from './images/foodTopia.png'
-import inBrowse from './images/inBrowse.png'
-import foldHere from './images/foldHere.png'
+import About from './About';
+import Projects from './Projects';
+import { BrowserRouter as Router, Routes, Route }
+    from 'react-router-dom';
 
 function App() {
   return (
@@ -20,125 +19,24 @@ function App() {
 
       
           <div className='links'>
-          <a>Projects</a> <a>Resume</a> <a href="https://www.linkedin.com/in/cynthia-chand-976495171/">Linkedin</a> <a>about</a>
+          <a href='/projects'>Projects</a> <a>Resume</a> <a href="https://www.linkedin.com/in/cynthia-chand-976495171/" target='blank' >Linkedin</a> <a href='/about'>about</a>
           </div>
       </header>
      
       <body>
-        <CardHolder/>
+      <Router>
+            <Routes>
+                <Route exact path='/' element={<Projects />} />
+                <Route path='/projects' element={<Projects />} />
+                <Route path='/about' element={<About />} />
+            </Routes>
+        </Router>
       </body>
      
     </div>
   );
 }
 
-function CardHolder(){
-  return (
-    <div>
-    <h2 id="working-on-line">Here’s what I’ve been working on</h2>
-    <div className='card-holder'>
-      <Card
-        imageSrc={simpleTee}
-        title="SimpleTee"
-        description="A custom t-shirt design app and my first project!"
-        />
-        <Card
-        imageSrc={foodTopia}
-        title="Foodtopia"
-        description="A recipe app with simple snacks for kids to make! Yum"
-        />
-        <Card
-        imageSrc={inBrowse}
-        title="InBrowse"
-        description="A Google Chrome extension used to screen record."
-        />
-        <Card
-        imageSrc={foldHere}
-        title="FoldHere"
-        description="A desktop widget for easily sharing files between computers."
-        />
-        <Card
-        imageSrc={rocket}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={rocket}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={rocket}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={rocket}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={rocket}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={rocket}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-        <Card
-        imageSrc={rocket}
-        title="Image Title"
-        description="This is the description that will appear on hover."
-        />
-    </div>
-    </div>
-  );
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-function Card({ imageSrc, title, description }) {
-  const [isHovered, setIsHovered] = useState(false);
-  
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-  
-  
-  
-  return(
-    <div className='card-container'
-    onMouseEnter={handleMouseEnter}
-    onMouseLeave={handleMouseLeave}
-    style={{ backgroundColor: isHovered ? '#282747' : 'transparent'}}
-    >
-      <div
-      style={{ display: 'inline-block', margin: '10px' }}
-    >
-      {!isHovered && (
-        <img src={imageSrc} alt={title} style={{ width: '200px', height: '200px' }} />
-      )}
-      <h3>{title}</h3>
-      {isHovered && <p>{description}</p>}
-    </div>
-    </div>
-  )
-}
 export default App;
