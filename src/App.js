@@ -20,11 +20,11 @@ function App() {
 
       
           <div className='links'>
-          <a href='/projects'>Projects</a> <a href='/resume'>Resume</a> <a href="https://www.linkedin.com/in/cynthia-chand-976495171/" target='blank' >Linkedin</a> <a href='/about'>about</a>
+          <a href='/projects'>Projects</a> <a href='/resume'>Resume</a>  <a href='/about'>About</a> <a href="https://www.linkedin.com/in/cynthia-chand-976495171/" target='blank' >Linkedin</a>
           </div>
       </header>
      
-      <body>
+      <div className='body'>
       <Router>
             <Routes>
                 <Route exact path='/' element={<Projects />} />
@@ -33,7 +33,7 @@ function App() {
                 <Route path='/resume' element={<Resume/>}/>
             </Routes>
         </Router>
-      </body>
+      </div>
      
     </div>
   );

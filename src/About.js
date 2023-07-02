@@ -22,13 +22,13 @@ function About(){
           Research. Design. Innovation that may or may not excite.
           </p>
           <p>
-          Contact  me at cyntheuhhh@gmail.com
+          Contact  me at <a href='mailto:cyntheuhhh@gmail.com'>cyntheuhhh@gmail.com</a>
           </p>
         </div>
         </div>
         <div className='about-damien'>
             <p>
-            I work together with my partner, Damien Cruz, to bring these designs to life. Links to his Github and LinkedIn.
+            I work together with my partner, Damien Cruz, to bring these designs to life. Here are links to his <a href='https://github.com/not-damien' target='blank'>Github</a> and <a href='https://www.linkedin.com/in/damien-cruz-7aa58b222/' target='blank'>LinkedIn</a>.
    
             </p>
         </div>
