@@ -2,6 +2,7 @@ import rocket from './rocket.svg';
 import './App.css';
 import About from './About';
 import Projects from './Projects';
+import Resume from './Resume'
 import { BrowserRouter as Router, Routes, Route }
     from 'react-router-dom';
 
@@ -19,7 +20,7 @@ function App() {
 
       
           <div className='links'>
-          <a href='/projects'>Projects</a> <a>Resume</a> <a href="https://www.linkedin.com/in/cynthia-chand-976495171/" target='blank' >Linkedin</a> <a href='/about'>about</a>
+          <a href='/projects'>Projects</a> <a href='/resume'>Resume</a> <a href="https://www.linkedin.com/in/cynthia-chand-976495171/" target='blank' >Linkedin</a> <a href='/about'>about</a>
           </div>
       </header>
      
@@ -29,6 +30,7 @@ function App() {
                 <Route exact path='/' element={<Projects />} />
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/about' element={<About />} />
+                <Route path='/resume' element={<Resume/>}/>
             </Routes>
         </Router>
       </body>
