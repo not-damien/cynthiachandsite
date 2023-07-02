@@ -6,7 +6,11 @@ import Resume from './Resume'
 import { BrowserRouter as Router, Routes, Route }
     from 'react-router-dom';
 
+import ParticleEmitter from './ParticleEffect/ParticleEmitter';
+
 function App() {
+  const characters = ['*', '#', '+', '-']; // Array of characters to be used
+  const interval = 500; // Interval in milliseconds for emitting new particles
   return (
     <div className="App">
       <header className="App-header">
@@ -23,6 +27,7 @@ function App() {
           <a href='/projects'>Projects</a> <a href='/resume'>Resume</a>  <a href='/about'>About</a> <a href="https://www.linkedin.com/in/cynthia-chand-976495171/" target='blank' >Linkedin</a>
           </div>
       </header>
+      {/* <ParticleEmitter characters={characters} interval={interval} /> */}
      
       <div className='body'>
       <Router>
@@ -36,6 +41,8 @@ function App() {
       </div>
       <footer>
     <p>&copy; 2023 Damien Cruz. All rights reserved.</p>
+    
+
       </footer> 
     </div>
   );
