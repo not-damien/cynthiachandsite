@@ -8,7 +8,8 @@ import rocket from './rocket.svg';
 function Projects(){
     return (
       <div>
-      <h2 id="working-on-line">Here’s what I’ve been working on</h2>
+        <div className='typewriter'><h2 id="working-on-line">Here’s what I’ve been working on...</h2></div>
+      
       <div className='card-holder'>
         <Card
           imageSrc={simpleTee}
@@ -29,11 +30,6 @@ function Projects(){
           imageSrc={foldHere}
           title="FoldHere"
           description="A desktop widget for easily sharing files between computers."
-          />
-          <Card
-          imageSrc={rocket}
-          title="Image Title"
-          description="This is the description that will appear on hover."
           />
           <Card
           imageSrc={rocket}

@@ -16,7 +16,7 @@ function About(){
           I’m a UX Designer interested in making cool stuff to help with the little things in life.
           </p>
           <p>
-          I studied at the University of Washington where I earned a trifecta of Bachelor's degrees in Biomedical Science, Art, Media, and Culture, and Psychology. During this I also got my Google certification UX Design.
+          I studied at the University of Washington where I earned a trifecta of Bachelor's degrees in Biomedical Science, Art, Media, and Culture, and Psychology. During this time I also obtained a Google certification in UX Design.
           </p>
           <p>
           Research. Design. Innovation that may or may not excite.

@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div id="tittle-container">
-        <h1 id="site-name">Cynthia Chand</h1>
-        <div id="sub-tittle">
+        <h2 id="site-name">Cynthia Chand</h2>
+        <img src={rocket} className="App-logo" alt="logo" />
           <h2 id="tag-line">Designing the Future.</h2>
-          <img src={rocket} className="App-logo" alt="logo" />
-        </div>
+          
+        
         </div>
 
       
@@ -34,7 +34,9 @@ function App() {
             </Routes>
         </Router>
       </div>
-     
+      <footer>
+    <p>&copy; 2023 Damien Cruz. All rights reserved.</p>
+      </footer> 
     </div>
   );
 }
