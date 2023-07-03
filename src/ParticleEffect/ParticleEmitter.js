@@ -5,12 +5,18 @@ const ParticleEmitter = ({ characters, interval }) => {
   const [particles, setParticles] = useState([]);
   
   useEffect(() => {
+    let particleCount = 0;
     const particleInterval = setInterval(() => {
       // Generate a new particle with a random character from the provided array
+      if(particleCount < 15){
       const randomChar = characters[Math.floor(Math.random() * characters.length)];
       const particle = <Particle key={Date.now()} char={randomChar} />;
       
       setParticles(prevParticles => [...prevParticles, particle]);
+      particleCount++
+      } else {
+        clearInterval(particleInterval)
+      }
     }, interval);
     
     // Cleanup function

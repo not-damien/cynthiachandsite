@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Routes, Route }
 import ParticleEmitter from './ParticleEffect/ParticleEmitter';
 
 function App() {
-  const characters = ['*', '#', '+', '-']; // Array of characters to be used
+  const characters = ['✩', '✧', '☾', '⋆']; // Array of characters to be used
   const interval = 500; // Interval in milliseconds for emitting new particles
   return (
     <div className="App">
@@ -27,7 +27,7 @@ function App() {
           <a href='/projects'>Projects</a> <a href='/resume'>Resume</a>  <a href='/about'>About</a> <a href="https://www.linkedin.com/in/cynthia-chand-976495171/" target='blank' >Linkedin</a>
           </div>
       </header>
-      {/* <ParticleEmitter characters={characters} interval={interval} /> */}
+      <ParticleEmitter characters={characters} interval={interval} />
      
       <div className='body'>
       <Router>

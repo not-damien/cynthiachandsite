@@ -6,8 +6,8 @@ const Particle = ({ char }) => {
   useEffect(() => {
     const moveParticle = () => {
       // Calculate the new position of the particle
-      const newX = Math.random() * window.innerWidth;
-      const newY = Math.random() * window.innerHeight;
+      const newX = Math.random() * (window.innerWidth - 100);
+      const newY = Math.random() * (window.innerHeight - 100) + window.scrollY;
       setPosition({ x: newX, y: newY });
     };
     

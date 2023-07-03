@@ -3,7 +3,7 @@ import simpleTee from './images/simpleTee.png'
 import foodTopia from './images/foodTopia.png'
 import inBrowse from './images/inBrowse.png'
 import foldHere from './images/foldHere.png'
-import rocket from './rocket.svg';
+import rocket from './blueRocket.png';
 
 function Projects(){
     return (
@@ -33,33 +33,33 @@ function Projects(){
           />
           <Card
           imageSrc={rocket}
-          title="Image Title"
-          description="This is the description that will appear on hover."
+          title="Coming Soon"
+          description="New projects will be posted here"
           />
           <Card
           imageSrc={rocket}
-          title="Image Title"
-          description="This is the description that will appear on hover."
+          title="Coming Soon"
+          description="New projects will be posted here"
           />
           <Card
           imageSrc={rocket}
-          title="Image Title"
-          description="This is the description that will appear on hover."
+          title="Coming Soon"
+          description="New projects will be posted here"
           />
           <Card
           imageSrc={rocket}
-          title="Image Title"
-          description="This is the description that will appear on hover."
+          title="Coming Soon"
+          description="New projects will be posted here"
           />
           <Card
           imageSrc={rocket}
-          title="Image Title"
-          description="This is the description that will appear on hover."
+          title="Coming Soon"
+          description="New projects will be posted here"
           />
           <Card
           imageSrc={rocket}
-          title="Image Title"
-          description="This is the description that will appear on hover."
+          title="Coming Soon"
+          description="New projects will be posted here"
           />
       </div>
       </div>
