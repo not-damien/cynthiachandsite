@@ -3,7 +3,7 @@ import './App.css';
 import About from './About';
 import Projects from './Projects';
 import Resume from './Resume'
-import { BrowserRouter as Router, Routes, Route }
+import { HashRouter as Router, Routes, Route }
     from 'react-router-dom';
 
 import ParticleEmitter from './ParticleEffect/ParticleEmitter';
@@ -24,7 +24,7 @@ function App() {
 
       
           <div className='links'>
-          <a href='/projects'>Projects</a> <a href='/resume'>Resume</a>  <a href='/about'>About</a> <a href="https://www.linkedin.com/in/cynthia-chand-976495171/" target='blank' >Linkedin</a>
+          <a href='#/projects'>Projects</a> <a href='#/resume'>Resume</a>  <a href='#/about'>About</a> <a href="https://www.linkedin.com/in/cynthia-chand-976495171/" target='blank' >Linkedin</a>
           </div>
       </header>
       <ParticleEmitter characters={characters} interval={interval} />
@@ -32,7 +32,7 @@ function App() {
       <div className='body'>
       <Router>
             <Routes>
-                <Route exact path='/' element={<Projects />} />
+                <Route path='/' element={<Projects />} />
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/resume' element={<Resume/>}/>
