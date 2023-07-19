@@ -4,7 +4,8 @@ import foodTopia from './images/foodTopia.png'
 import inBrowse from './images/inBrowse.png'
 import foldHere from './images/foldHere.png'
 import rocket from './blueRocket.png';
-
+import flappyDog from "./images/flappyDog.png"
+import './Projects.css'
 function Projects(){
     return (
       <div>
@@ -15,6 +16,7 @@ function Projects(){
           imageSrc={simpleTee}
           title="SimpleTee"
           description="A custom t-shirt design app and my first project!"
+          link = '#/resume'
           />
           <Card
           imageSrc={foodTopia}
@@ -32,9 +34,10 @@ function Projects(){
           description="A desktop widget for easily sharing files between computers."
           />
           <Card
-          imageSrc={rocket}
-          title="Coming Soon"
-          description="New projects will be posted here"
+          imageSrc={flappyDog}
+          title="Game Assets"
+          description="A collection of assets I have created to be used in game design."
+          link = '#/gameassets'
           />
           <Card
           imageSrc={rocket}
@@ -66,7 +69,7 @@ function Projects(){
     );
   }
   
-  function Card({ imageSrc, title, description }) {
+  function Card({ imageSrc, title, description, link }) {
     const [isHovered, setIsHovered] = useState(false);
     
     const handleMouseEnter = () => {
@@ -78,7 +81,9 @@ function Projects(){
     };
   
     return(
-      <div className='card-container'
+      <a href={link}>
+      <div
+      className='card-container'
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={{ backgroundColor: isHovered ? 'rgba(40, 39, 71, 0.75)' : 'transparent'}}
@@ -87,12 +92,12 @@ function Projects(){
         style={{ display: 'inline-block', margin: '10px' }}
       >
         {!isHovered && (
-          <img src={imageSrc} alt={title} style={{ width: '200px', height: '200px' }} />
+          <img className="card-img" src={imageSrc} alt={title}  />
         )}
         <h3>{title}</h3>
         {isHovered && <p>{description}</p>}
       </div>
-      </div>
+      </div></a>
     )
   }
   export default Projects
