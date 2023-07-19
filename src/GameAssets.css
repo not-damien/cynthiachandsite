@@ -1,0 +1,26 @@
+.border-div{
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    max-width: 1100px;
+    margin: 30px;
+
+
+    /* Created for a game inspired by Flappy Bird and the anime Chainsaw man Made by Damien Cruz, 2023 Click here to play it! */
+
+    font-family: 'Mochiy Pop One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}

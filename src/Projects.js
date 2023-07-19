@@ -16,7 +16,6 @@ function Projects(){
           imageSrc={simpleTee}
           title="SimpleTee"
           description="A custom t-shirt design app and my first project!"
-          link = '#/resume'
           />
           <Card
           imageSrc={foodTopia}
