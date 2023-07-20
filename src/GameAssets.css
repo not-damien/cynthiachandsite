@@ -16,11 +16,7 @@
     color: #000000;
 
 }
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 a{
     text-decoration: none;
 }

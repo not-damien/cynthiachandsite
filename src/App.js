@@ -4,6 +4,7 @@ import About from './About';
 import Projects from './Projects';
 import Resume from './Resume'
 import GameAssets from './GameAssets'
+import InBrowse from './Inbrowse'
 import { HashRouter as Router, Routes, Route }
     from 'react-router-dom';
 
@@ -38,6 +39,7 @@ function App() {
                 <Route path='/about' element={<About />} />
                 <Route path='/resume' element={<Resume/>}/>
                 <Route path='/gameassets' element={<GameAssets />}/>
+                <Route path='/inbrowse' element={<InBrowse />}/>
             </Routes>
         </Router>
       </div>

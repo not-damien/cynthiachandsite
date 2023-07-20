@@ -26,6 +26,7 @@ function Projects(){
           imageSrc={inBrowse}
           title="InBrowse"
           description="A Google Chrome extension used to screen record."
+          link="#/inbrowse"
           />
           <Card
           imageSrc={foldHere}
