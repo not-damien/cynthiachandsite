@@ -7,3 +7,9 @@
     text-align: left;
     padding: 30px;
 }
+a{
+    color: lightblue;
+}
+ section a{
+    color: blue;
+}
