@@ -6,6 +6,9 @@ import Resume from './Resume'
 import GameAssets from './GameAssets'
 import InBrowse from './Inbrowse'
 import SimpleTee from './SimpleTee'
+import Foodtopia from './Foodtopia';
+
+
 
 import { HashRouter as Router, Routes, Route }
     from 'react-router-dom';
@@ -43,6 +46,7 @@ function App() {
                 <Route path='/gameassets' element={<GameAssets />}/>
                 <Route path='/inbrowse' element={<InBrowse />}/>
                 <Route path='/simpletee' element={<SimpleTee/>}/>
+                <Route path='/Foodtopia' element={<Foodtopia/>}/>
             </Routes>
         </Router>
       </div>
