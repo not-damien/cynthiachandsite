@@ -13,3 +13,8 @@ a{
  section a{
     color: blue;
 }
+.side-by-side{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
