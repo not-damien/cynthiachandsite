@@ -4,7 +4,7 @@ import paper1 from "./images/simpleteepaper1.png"
 import paper2 from "./images/simpleteepaper2.png"
 import digital1 from "./images/simpleteedigital1.png"
 import digital2 from "./images/simpleteedigital2.png"
-
+import low from "./images/simpleteelowfidelity.png"
 
 
 
@@ -45,13 +45,6 @@ function SimpleTee(){
                 <img className="img-on-page" src={paper1}/>
                 <img src={paper2}/>
             </div>
-            
-            
-            <div className="center">
-                <h2>Low Fidelity Prototype</h2>
-                <p>The low fidelity prototype connected the user flow of designing and purchasing a custom t-shirt in the app.</p>
-                <p>View the SimpleTee <a target="blank" href="https://www.figma.com/file/iGnLNx9T2BoNnUiXdkwmDX/Low-Fidelity-Prototype-v.1?type=design&node-id=0-1&mode=design&t=Q0Ait8yw5OWjxVaR-0">low fidelity prototype</a></p>
-            </div>
             <div className="center">
                 <h2>Digital Wireframes</h2>
                 <p>I took my final paper wireframes and cleaned them up by rearranging some elements for a more user friendly design.</p>
@@ -60,6 +53,13 @@ function SimpleTee(){
                 <img className="img-on-page" src={digital1}/>
                 <img src={digital2}/>
             </div>
+            
+            <div className="center">
+                <h2>Low Fidelity Prototype</h2>
+                <p>The low fidelity prototype connected the user flow of designing and purchasing a custom t-shirt in the app.</p>
+                <p>View the SimpleTee <a target="blank" href="https://www.figma.com/file/iGnLNx9T2BoNnUiXdkwmDX/Low-Fidelity-Prototype-v.1?type=design&node-id=0-1&mode=design&t=Q0Ait8yw5OWjxVaR-0">low fidelity prototype</a></p>
+            </div>
+            <img src={low}/>
 
 
 
