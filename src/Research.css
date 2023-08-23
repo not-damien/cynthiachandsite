@@ -10,9 +10,6 @@
 a{
     color: lightblue;
 }
- section a{
-    color: blue;
-}
 .side-by-side{
     display: flex;
     justify-content:space-evenly;

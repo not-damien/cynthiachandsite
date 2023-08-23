@@ -3,6 +3,7 @@ body {
   font-family: 'Mochiy Pop One';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -16,6 +17,5 @@ code {
   flex-direction: column;
 }
 section{
-  color: black;
   margin: 30px;
 }
