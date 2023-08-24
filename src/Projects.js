@@ -88,7 +88,7 @@ function Projects(){
       className='card-container'
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      style={{ backgroundColor: isHovered ? 'rgba(40, 39, 71, 0.75)' : 'transparent'}}
+      style={{ backgroundColor: isHovered ? '#141342b8' : 'transparent'}}
       >
         <div
         style={{ display: 'inline-block', margin: '10px' }}
