@@ -1,10 +1,11 @@
-import aboutMePic from './images/aboutMePic.png'
+import aboutMePic from './images/cynthiaPic.jpg'
 import './About.css';
 function About(){
     return(
       <div className='blurb'>
         <div className='about-cynthia'>
         <img
+          id='aboutmepic'
           src={aboutMePic}
         />
         <div className='about-me'>
