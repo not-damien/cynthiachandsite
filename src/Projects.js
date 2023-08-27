@@ -21,7 +21,7 @@ function Projects(){
           <Card
           imageSrc={foodTopia}
           title="Foodtopia"
-          description="A recipe app with simple snacks for kids to make! Yum"
+          description="A recipe app with simple snacks for kids to make! Yum!"
           link='#/foodtopia'
           />
           <Card

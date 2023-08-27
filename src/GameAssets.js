@@ -13,7 +13,7 @@ function GameAssets(){
             <img src={bread}/>
             
             <img src={dog}/>
-            <p>Created for a game inspired by Flappy Bird and the anime Chainsaw man Made by Damien Cruz, 2023</p>
+            <p>Created for a game inspired by Flappy Bird and the anime Chainsaw Man made by Damien Cruz, 2023</p>
             <p><a href="https://not-damien.github.io/FlappyBirdClone/" target="blank">Click here to play it!</a></p>
             <img src={chainsaw}/>
         </div>
