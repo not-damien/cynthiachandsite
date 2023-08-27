@@ -76,30 +76,6 @@ body{
 
 
 
-/*For cards  */
-.card-container {
-  border-radius: 20%;
-  border-width: 2px;
-  width: 321px;
-  height: 302px;
-  color: white;
-  margin: 15px;
-}
-
-
-.card-holder {
-  height: max-content;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-content: space-around;
-}
-#working-on-line {
-  margin-top:20px;
-  margin-bottom:20px;
-  font-size: 40px;
-}
-
 
 /* typing effect*/
 .typewriter h2 {

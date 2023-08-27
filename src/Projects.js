@@ -87,19 +87,14 @@ function Projects(){
       <a href={link}>
       <div
       className='card-container'
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      style={{ backgroundColor: isHovered ? '#141342b8' : 'transparent'}}
       >
-        <div
-        style={{ display: 'inline-block', margin: '10px' }}
-      >
-        {!isHovered && (
-          <img className="card-img" src={imageSrc} alt={title}  />
-        )}
-        <h3>{title}</h3>
-        {isHovered && <p>{description}</p>}
+        <div className='card-content'> 
+        <div>
+        <h3 className='title'>{title}</h3>
+       <p className='description'>{description}</p>
+        </div> 
       </div>
+      <img className="card-img" src={imageSrc} alt={title}  />
       </div></a>
     )
   }
