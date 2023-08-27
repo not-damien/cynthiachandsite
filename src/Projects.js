@@ -34,6 +34,7 @@ function Projects(){
           imageSrc={foldHere}
           title="FoldHere"
           description="A desktop widget for easily sharing files between computers."
+          link = '#/foldhere'
           />
           <Card
           imageSrc={flappyDog}
