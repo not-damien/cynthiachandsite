@@ -14,6 +14,7 @@ import { HashRouter as Router, Routes, Route }
     from 'react-router-dom';
 
 import ParticleEmitter from './ParticleEffect/ParticleEmitter';
+import Foldhere from './Foldhere';
 
 function App() {
   const characters = ['✩', '✧', '☾', '⋆']; // Array of characters to be used
@@ -47,6 +48,7 @@ function App() {
                 <Route path='/inbrowse' element={<InBrowse />}/>
                 <Route path='/simpletee' element={<SimpleTee/>}/>
                 <Route path='/Foodtopia' element={<Foodtopia/>}/>
+                <Route path='/Foldhere' element={<Foldhere/>}/>
             </Routes>
         </Router>
       </div>

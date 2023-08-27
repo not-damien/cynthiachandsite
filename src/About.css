@@ -1,7 +1,7 @@
 /*blurb*/
 .about-me{
     padding: 10px;
-    background-color: #02004baf;
+    background-color: #141342b8;
     text-align: left;
     border-radius: 25px;
     max-width: 60%;
@@ -28,8 +28,9 @@
 }
 .about-damien{
     padding: 10px 30px;
-    background-color: #02004B;
+    background-color: #141342b8;
     text-align: left;
+  
     border-radius: 25px;
 }
 #aboutmepic{

@@ -1,11 +1,10 @@
 .outline{
-    border-style: solid;
-    border-color: white;
     border-radius: 25px;
     max-width: 1100px;
-    margin: 30px;
+    margin:30px auto;
     text-align: left;
     padding: 30px;
+    background-color: #141342b8;
 }
 a{
     color: lightblue;
@@ -14,4 +13,14 @@ a{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
+}
+.background{
+    background-color: #141342b8;
+    border-radius: 25px;
+    max-width: 1100px;
+    margin:30px auto;
+    padding: 30px;
+}
+h2{
+    margin-bottom: 0px;
 }

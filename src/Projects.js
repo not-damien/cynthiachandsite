@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import simpleTee from './images/simpleTee.png'
 import foodTopia from './images/foodTopia.png'
 import inBrowse from './images/inBrowse.png'
@@ -7,6 +7,10 @@ import rocket from './blueRocket.png';
 import flappyDog from "./images/flappyDog.png"
 import './Projects.css'
 function Projects(){
+  const scrolltotop = () => {
+    window.scrollTo(0,0);
+  }
+  useEffect(scrolltotop,[])
     return (
       <div>
         <div className='typewriter'><h2 id="working-on-line">Here’s what I’ve been working on...</h2></div>
@@ -21,7 +25,7 @@ function Projects(){
           <Card
           imageSrc={foodTopia}
           title="Foodtopia"
-          description="A recipe app with simple snacks for kids to make! Yum"
+          description="A recipe app with simple snacks for kids to make! Yum!"
           link='#/foodtopia'
           />
           <Card
@@ -34,6 +38,7 @@ function Projects(){
           imageSrc={foldHere}
           title="FoldHere"
           description="A desktop widget for easily sharing files between computers."
+          link = '#/foldhere'
           />
           <Card
           imageSrc={flappyDog}
@@ -86,19 +91,14 @@ function Projects(){
       <a href={link}>
       <div
       className='card-container'
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      style={{ backgroundColor: isHovered ? 'rgba(40, 39, 71, 0.75)' : 'transparent'}}
       >
-        <div
-        style={{ display: 'inline-block', margin: '10px' }}
-      >
-        {!isHovered && (
-          <img className="card-img" src={imageSrc} alt={title}  />
-        )}
-        <h3>{title}</h3>
-        {isHovered && <p>{description}</p>}
+        <div className='card-content'> 
+        <div>
+        <h3 className='title'>{title}</h3>
+       <p className='description'>{description}</p>
+        </div> 
       </div>
+      <img className="card-img" src={imageSrc} alt={title}  />
       </div></a>
     )
   }
