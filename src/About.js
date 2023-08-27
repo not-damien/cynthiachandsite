@@ -1,6 +1,11 @@
 import aboutMePic from './images/cynthiaPic.jpg'
 import './About.css';
+import { useEffect } from 'react';
 function About(){
+  const scrolltotop = () => {
+    window.scrollTo(0,0);
+  }
+  useEffect(scrolltotop,[])
     return(
       <div className='blurb'>
         <div className='about-cynthia'>

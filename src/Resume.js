@@ -1,5 +1,10 @@
 import './Resume.css'
+import { useEffect } from 'react';
 function Resume(){
+    const scrolltotop = () => {
+        window.scrollTo(0,0);
+      }
+      useEffect(scrolltotop,[])
     return (
         <div>
         <div className='typewriter'><h2 id="working-on-line">Here’s my CV!</h2></div>

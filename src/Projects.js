@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import simpleTee from './images/simpleTee.png'
 import foodTopia from './images/foodTopia.png'
 import inBrowse from './images/inBrowse.png'
@@ -7,6 +7,10 @@ import rocket from './blueRocket.png';
 import flappyDog from "./images/flappyDog.png"
 import './Projects.css'
 function Projects(){
+  const scrolltotop = () => {
+    window.scrollTo(0,0);
+  }
+  useEffect(scrolltotop,[])
     return (
       <div>
         <div className='typewriter'><h2 id="working-on-line">Here’s what I’ve been working on...</h2></div>

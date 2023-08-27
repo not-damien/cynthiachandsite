@@ -44,6 +44,7 @@ body{
   justify-content: space-between;
   position:sticky;
   top: 0px;
+  z-index: 3;
 }
 .links a{
   margin: 10px;
