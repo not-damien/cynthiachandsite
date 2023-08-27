@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import simpleTee from './images/simpleTee.png'
 import foodTopia from './images/foodTopia.png'
 import inBrowse from './images/inBrowse.png'
@@ -77,16 +77,6 @@ function Projects(){
   }
   
   function Card({ imageSrc, title, description, link }) {
-    const [isHovered, setIsHovered] = useState(false);
-    
-    const handleMouseEnter = () => {
-      setIsHovered(true);
-    };
-  
-    const handleMouseLeave = () => {
-      setIsHovered(false);
-    };
-  
     return(
       <a href={link}>
       <div
