@@ -1,4 +1,10 @@
 import "./Research.css"
+import paper from "./images/foodtopiaPaper.png"
+import low from "./images/foodtopiaLowFidel.png"
+import digital1 from "./images/foodtopiaDigital.png"
+import digital2 from "./images/foodtopiaDigital2.png"
+import diagram from "./images/foodtopiaDiagram.png"
+import high from "./images/foodtopiaHigh.png"
 export default function Foodtopia(){
     return (
         <div>
@@ -33,15 +39,21 @@ export default function Foodtopia(){
                 <h2>Initial Design Concept</h2>
                 <p>My goal here was to create a simplified version of how each page would look along with their alternate iterations based on the settings chosen.</p>
             </div>
+            <img src={paper}/>
             <div className="center background">
                 <h2>Digital Wireframes</h2>
                 <p>I took my final paper wireframes and cleaned them up by rearranging some elements for a more user friendly design.</p>
+            </div>
+            <div className="side-by-side">
+                <img className="img-on-page" src={digital1}/>
+                <img src={digital2}/>
             </div>
 
             <div className="center background">
                 <h2>Low Fidelity Prototype</h2>
                 <p>The low fidelity prototype connected the user flow of a recipe app</p>
             </div>
+            <img src={low}/>
 
 
 
@@ -50,11 +62,15 @@ export default function Foodtopia(){
             <div className="center background">
             <h2>User Testing Results</h2>
                 <p>Users want a way to adjust text, save recipes, and have a back button. They also wanted a way to swap what side the hamburger menu is on, along with making pictures clickable as links to the recipe alongside the text.</p>
-            </div> 
+            </div>
+
+            <img src={diagram}/>
+
             <div className="center background">
                 <h2>High Fidelity Prototype </h2>
                 <p><a target="_blank" href="https://www.figma.com/file/L2Nvr7BJ04LwMPoxEB0eF1/High-fidelity-prototype?type=design&mode=design&t=E87wQNz6LBNfpUD4-1">View the Foodtopia high fidelity prototype</a></p>
             </div>
+            <img src={high}/>
             <div className="center background">
             <h2>Conclusions and Next Steps</h2>
             <p>
