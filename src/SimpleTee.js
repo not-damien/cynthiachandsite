@@ -5,9 +5,8 @@ import paper2 from "./images/simpleteepaper2.png"
 import digital1 from "./images/simpleteedigital1.png"
 import digital2 from "./images/simpleteedigital2.png"
 import low from "./images/simpleteelowfidelity.png"
-
-
-
+import high from "./images/simpleteehighfidelity.png"
+import affinity from "./images/simpleteeaffinitydiagram.png"
 function SimpleTee(){
     return (
         <div>
@@ -72,11 +71,13 @@ function SimpleTee(){
                 <h2>User Testing Results</h2>
                 <p>Users want a way to adjust text, hover over images to view them larger, and want the names of the colors written below them. They also wanted a storefront with premade tees, and a way to go back and edit the items in their cart.</p>
             </div>
+            <img src={affinity}/>
             
             <div className="center background">
                 <h2>High Fidelity Prototype </h2>
                 <p>View the SimpleTee <a target="blank" href="https://www.figma.com/file/duBGPJ7avezr3Vth6IqsTl/High-Fidelity-Prototype-v.1.2?type=design&node-id=0-1&mode=design&t=wpyepV3Y3DnthFG1-0">high fidelity prototype</a></p>
             </div>
+            <img src={high}/>
             <div className="center background">
             <h2>Conclusions and Next Steps</h2>
             <p>
